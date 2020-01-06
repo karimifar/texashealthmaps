@@ -9,7 +9,7 @@ a{
 }
 header{
     padding: 0 15%;
-    background: #eee;
+    background: #14103b;
 }
 #nav-icon{
     width:100px;
@@ -35,31 +35,6 @@ nav ul{
     margin-left: 25px;
     text-transform: uppercase;
     font-weight: 100;
+    color: #fff;
 }
-.svg{
-    width: 50%;
-    align-self: center;
-}
-.intro{
-    width:50%;
-    align-self: center;
-}
-.intro h1{
-    font-size: 60px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    color: #14103b;
-}
-.intro p{
-    font-size: 32px;
-    color: #3a2d70;
-}
-.content{
-    height: 100vh;
-}
-.row-1{
-    background: #eee;
-    padding: 100px 10% 100px 15%;
-    display: flex;
-    width: 100%;
-}
+
