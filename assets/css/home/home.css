@@ -65,20 +65,29 @@
 .project-row{
     padding: 10px 10%;
     display: flex;
+    box-shadow: 0 0 10px #ccc;
 }
 .project-desc{
     align-self: center;
-    width: 60%;
+    width: 50%;
     padding-right: 20px;
+    line-height: 1.5em;
+    font-size: 18px;
 }
 .project-img{
     align-self: center;
-    width: 40%;
+    width: 50%;
     padding-left: 20px;
     perspective: 1000px;
+    
+    border-radius:10px;
+    /* overflow: hidden; */
 }
 .project-img  img{
-    transform: rotateY(-20deg);
+    /* transform: rotateY(-30deg); */
+    transition: all 0.5s ease-in-out;
+    /* box-shadow: 0px 0px 10px #ddd; */
+    border-radius: 5px;
 }
 .project-title{
     font-size: 36px;
@@ -97,5 +106,44 @@
     font-weight: 100;
 }
 .project-links{
-    height: 100px
+    display: flex;
+    margin-top:30px;
+    border-top: 1px solid #ddd;
+
 }
+.proj-link{
+    margin: 10px;
+    display: flex;
+    border-bottom: solid 1px #16998000;
+}
+.proj-link p{
+    display: inline-block;
+    padding: 5px;
+    color: #3a2d70;
+    font-weight: 100;
+    align-self: center;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    line-height: 1.1em;
+}
+.proj-link i{
+    padding: 5px;
+    font-size: 48px;
+    color: #14103b66;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.proj-link:hover{
+    /* background: #eee; */
+    border-bottom: solid 1px #169980;
+}
+.proj-link:hover i{
+    color: #169980;
+}
+.proj-link:hover p{
+    color: #14103b
+}
+
+
+

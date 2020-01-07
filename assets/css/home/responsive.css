@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1440px){
+    .intro p{
+        font-size: 24px;
+        color: #eee;
+        text-justify: auto;
+    }
+
+
+    .proj-link p{
+        font-size: 16px;
+        transition: all 0.5s ease-in-out;
+    }
+    .proj-link i{
+        font-size: 36px;
+        
+    }
+}
