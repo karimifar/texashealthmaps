@@ -45,33 +45,32 @@ window.addEventListener("scroll", function(e){
 
 
 ////observer test
-var projectImages = document.querySelectorAll('.project-img img');
+var projects = document.querySelectorAll('.project-row');
 
 
 var options = {
-	rootMargin: '0px 0px -350px 0px',
-	threshold: 0.00001
+  //window.innerHeight
+	rootMargin:   '0px 0px -' + (window.innerHeight-100) + 'px 0px',
+	threshold: 0.01
   };
 function handleIntersection(entries, observer){
 entries.forEach( function(entry){
     // console.log(entry.intersectionRect.height)
-    var img = entry.target
-    var status = entry.target.dataset.status
+    var project = entry.target
+    var title = entry.target.dataset.title
+    console.log(title)
     console.log(entry.intersectionRatio)
-    if(entry.intersectionRatio > 0 && status === "flat") {
+    if(entry.intersectionRatio > 0 ) {
         console.log(entry)
-        console.log(img)
-        $(img).css("transform","rotateY(-0deg)")
-        console.log($(img).attr("data-status"))
-        entry.target.dataset.status = "perspective"
-    }else if(status ==="perspective"){
-        $(img).css("transform","rotateY(-30deg)")
-        entry.target.dataset.status = "flat"
+        console.log(project)
+        $("#proj-title h1").text(title)
+        // console.log($(img).attr("data-status"))
+        // entry.target.dataset.status = "perspective"
     }
 })
 }
 var observer = new IntersectionObserver(handleIntersection, options);
 
-projectImages.forEach(function(img){
-  observer.observe(img);
+projects.forEach(function(project){
+  observer.observe(project);
 })
