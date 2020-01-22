@@ -1,3 +1,4 @@
+console.log("22/1-1")
 var hash = window.location.hash;
 window.onbeforeunload = function () {
   if(hash.length == 0){
