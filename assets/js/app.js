@@ -1,4 +1,4 @@
-console.log("22/1-1")
+console.log("22/1-2")
 var hash = window.location.hash;
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
