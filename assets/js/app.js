@@ -1,6 +1,6 @@
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
 var parallaxEl = document.getElementsByClassName("project-row")
 
 var parallaxWrap = document.getElementById("parallax-wrap")
