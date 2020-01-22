@@ -1,10 +1,8 @@
 console.log("22/1-1")
 var hash = window.location.hash;
 window.onbeforeunload = function () {
-  if(hash.length == 0){
-    window.scrollTo(0, 0);
-  }else{
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
+  if(hash.length >0){
     var scrollto = $(hash).offset.top;
     window.scrollTo(scrollto)
   }
