@@ -1,14 +1,12 @@
 console.log("varsion: 22/1-3")
-var hash = window.location.hash;
+var hash;
+hash = window.location.hash;
+
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-  if(hash.length >0){
-    var scrollto = $(hash).offset.top;
-    this.setTimeout(window.scrollTo(scrollto), 200)
-    
-  }
- 
+  // window.scrollTo(0, 0);
 }
+
+ 
 var parallaxEl = document.getElementsByClassName("project-row")
 
 var parallaxWrap = document.getElementById("parallax-wrap")
@@ -50,11 +48,12 @@ entries.forEach( function(entry){
     var project = entry.target
     var title = project.dataset.title
     var index = project.dataset.index
-    console.log(title)
-    console.log(entry.intersectionRatio)
-    if(scrollingDown && entry.intersectionRatio > 0.50) {
-        console.log(entry)
-        console.log(project)
+    // console.log(title)
+    // console.log(entry.intersectionRatio)
+    $("#proj-title h1").text(title)
+    if(entry.intersectionRatio > 0.50) {
+        // console.log(entry)
+        // console.log(project)
         $("#proj-title h1").text(title)
         // console.log($(img).attr("data-status"))
         // entry.target.dataset.status = "perspective"
