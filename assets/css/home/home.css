@@ -31,7 +31,6 @@
 #parallax-wrap{
     width: 100%;
     position: relative;
-    
 }
 
 .project-row{
@@ -146,9 +145,13 @@
 }
 
 #proj-title{
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top:0;
     left:0;
 }
+#proj-title.isFixed{
+    position: fixed;
+}
+
 

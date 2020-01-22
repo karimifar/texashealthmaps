@@ -1,4 +1,7 @@
 
+html {
+    scroll-behavior: smooth;
+}
 *{
     font-family: 'foco', sans-serif;
     box-sizing: border-box;
