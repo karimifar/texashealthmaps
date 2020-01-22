@@ -1,10 +1,11 @@
-console.log("22/1-2")
+console.log("varsion: 22/1-3")
 var hash = window.location.hash;
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
   if(hash.length >0){
     var scrollto = $(hash).offset.top;
-    window.scrollTo(scrollto)
+    this.setTimeout(window.scrollTo(scrollto), 200)
+    
   }
  
 }
