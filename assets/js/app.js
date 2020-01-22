@@ -1,6 +1,10 @@
-$(document).ready(function(){
-  $(this).scrollTop(0);
-});
+var hash = window.location.hash;
+window.onbeforeunload = function () {
+  if(!hash){
+    window.scrollTo(0, 0);
+  }
+ 
+}
 var parallaxEl = document.getElementsByClassName("project-row")
 
 var parallaxWrap = document.getElementById("parallax-wrap")
