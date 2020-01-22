@@ -1,6 +1,6 @@
 var hash = window.location.hash;
 window.onbeforeunload = function () {
-  if(!hash){
+  if(hash.length == 0){
     window.scrollTo(0, 0);
   }else{
     window.scrollTo(0, 0);
