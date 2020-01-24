@@ -42,7 +42,7 @@
 }
 
 .project-row:nth-child(even){
-    background: #eee;
+    /* background: #eee; */
 }
 
 .row-2{
@@ -147,8 +147,19 @@
 #proj-title{
     position: absolute;
     z-index: 100;
-    top:0;
-    left:0;
+    top:100px;
+    left:10%;
+    
+}
+#proj-title h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #fff;
+    background: #14103b ;
+    padding: 10px;
+    box-shadow:10px 0 0 #14103b, -10px 0 0 #14103b;
+    max-width: 80%;
+    font-weight: 100;
 }
 #proj-title.isFixed{
     position: fixed;
