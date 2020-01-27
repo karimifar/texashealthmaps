@@ -1,3 +1,19 @@
+var openningAnimation = new TimelineMax()
+openningAnimation.staggerFrom(".layer", 2 ,{y:-50, opacity:0, transformOrigin: "50% 50%", ease:Power4.easeOut},0.2)
+
+
+// var infiniteAnimation = new TimelineMax({repeat:-1, delay:2})
+// infiniteAnimation.to("#Layer_1", 3, {y:-10, ease:Power4.easeOut})
+//   .to("#Layer_1", 3, {y:0, ease:Power4.easeOut, delay:Math.random()*5})
+
+var pin = new TimelineMax({repeat:-1, delay:2})
+pin.to("#pin", 1.5, {y:-20, ease:Power4.easeOut})
+  .to("#pin-shadow", 1.5, {scale:2, ease:Power4.easeOut, transformOrigin: "50% 50%"},"=-1.5")
+  .to("#pin", 2, {y: 0, ease:Power2.easeIn})
+  .to("#pin-shadow", 2, {scale:1, ease:Power2.easeIn, transformOrigin: "50% 50%"},"=-2")
+  
+  
+
 console.log("varsion: 22/1-3")
 var hash;
 hash = window.location.hash;
