@@ -66,17 +66,17 @@ entries.forEach( function(entry){
     var index = project.dataset.index
     // console.log(title)
     // console.log(entry.intersectionRatio)
-    $("#proj-title h1").text(title)
+    $("#proj-title h1 span").text(title)
     if(entry.intersectionRatio > 0.50) {
         // console.log(entry)
         // console.log(project)
-        $("#proj-title h1").text(title)
+        $("#proj-title h1 span").text(title)
         // console.log($(img).attr("data-status"))
         // entry.target.dataset.status = "perspective"
     }else if(!scrollingDown){
       var prevTitle = projects[index-1].getAttribute("data-title");
       console.log(prevTitle)
-      $("#proj-title h1").text(prevTitle)
+      $("#proj-title h1 span").text(prevTitle)
 
     }
 })

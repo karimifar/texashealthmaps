@@ -155,11 +155,15 @@
     font-size: 48px;
     margin-bottom: 30px;
     color: #fff;
-    background: #14103b ;
+    
     padding: 10px;
-    box-shadow:10px 0 0 #14103b, -10px 0 0 #14103b;
+    
     max-width: 80%;
     font-weight: 100;
+}
+#proj-title h1 span{
+    background: #14103b ;
+    box-shadow:10px 0 0 #14103b, -10px 0 0 #14103b;
 }
 #proj-title.isFixed{
     position: fixed;
