@@ -41,25 +41,6 @@
     background: #fff;
 }
 
-.project-row:nth-child(even){
-    /* background: #eee; */
-}
-
-.row-2{
-    /* background: chartreuse; */
-}
-
-.row-3{
-    /* background: saddlebrown; */
-}
-
-.row-4{
-    /* background: firebrick; */
-}
-
-.row-5{
-    /* background: wheat; */
-}
 
 .project-row{
     padding: 10px 10%;
@@ -129,20 +110,22 @@ h2.project-title{
 .proj-link i{
     padding: 5px;
     font-size: 48px;
-    color: #14103b66;
+    color: #169980c0;
     transition: all 0.2s ease-in-out;
+    align-self: center;
     
 }
 
 .proj-link:hover{
     /* background: #eee; */
-    border-bottom: solid 1px #169980;
+    /* border-bottom: solid 1px #169980; */
 }
 .proj-link:hover i{
-    color: #169980;
+    color: #3a2d70;
 }
 .proj-link:hover p{
-    color: #14103b
+    color: #14103b;
+    text-decoration: underline;
 }
 
 #proj-title{
