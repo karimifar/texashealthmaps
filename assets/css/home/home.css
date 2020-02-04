@@ -64,7 +64,7 @@
 .project-row{
     padding: 10px 10%;
     display: flex;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 5px #ccc;
 }
 .project-desc{
     align-self: center;
@@ -88,17 +88,18 @@
     /* box-shadow: 0px 0px 10px #ddd; */
     border-radius: 5px;
 }
-.project-title{
-    font-size: 36px;
+h2.project-title{
+    font-size: 48px;
     margin-bottom: 30px;
-    background: #043142;
     color: #fff;
-    box-shadow:10px 0 0 #043142, -10px 0 0 #043142;
-    padding: 10px 0;
-    display: table;
-    width: fit-content;
+    padding: 10px; 
+    max-width: 500px;
     font-weight: 100;
-
+}
+.project-title span{
+    background: #14103b ;
+    box-shadow:10px 0 0 #14103b, -10px 0 0 #14103b;
+    line-height: 1.3em;
 }
 .project-intro{
     font-size: 22px;
@@ -148,8 +149,7 @@
     position: absolute;
     z-index: 100;
     top:100px;
-    left:10%;
-    
+    left:10%; 
 }
 #proj-title h1{
     font-size: 48px;
