@@ -35,7 +35,6 @@ body {
 }
 .footer-logo{
     display: flex;
-    width:50%;
     max-width: 500px;
     justify-content: space-between;
 
